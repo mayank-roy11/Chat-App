@@ -1,4 +1,9 @@
+import dotenv from "dotenv";
 import mongoose from "mongoose";
+dotenv.config(); 
+
+console.log("🧪 Checking env path:", process.cwd());
+console.log("✅ Loaded MONGO_URI:", process.env.MONGO_URI);
 
 export const connectDB = async () => {
   try {
